@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
-import { ArrowLeft, Play, Sparkles } from 'lucide-react'
+import { ArrowLeft, Play } from 'lucide-react'
+import { Countdown } from './countdown'
 
 export function Hero() {
   return (
@@ -9,13 +12,13 @@ export function Hero() {
       <div className="absolute inset-0 -z-10 grid-lines opacity-30" />
       <div className="container-shell grid min-h-[780px] items-center gap-12 pb-20 pt-20 lg:grid-cols-[1.05fr_.95fr] lg:gap-20">
         <div className="max-w-3xl">
-          <div className="animate-rise mb-7 inline-flex items-center gap-3 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-sm font-bold text-primary"><span className="h-2 w-2 rounded-full bg-primary shadow-[0_0_12px_#f04a9a]" />GTA WORLD</div>
-          <h1 className="hero-title animate-rise-delay-1 font-black tracking-[-.06em] text-foreground text-glow">به دنیای GTA<br /><span className="text-primary">خوش آمدید</span></h1>
-          <p className="animate-rise-delay-2 mt-7 max-w-xl text-lg leading-9 text-muted sm:text-xl">مرجع فارسی اخبار، اطلاعات و راهنماهای Grand Theft Auto</p>
-          <p className="animate-rise-delay-2 mt-4 max-w-lg leading-8 text-muted/75">از آخرین اخبار GTA VI تا راهنماها، نقشه‌ها، شخصیت‌ها، ماشین‌ها و اطلاعات نسخه‌های محبوب Grand Theft Auto.</p>
-          <div className="animate-rise-delay-3 mt-9 flex flex-wrap gap-3"><a href="#newsletter" className="inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3.5 font-bold text-white shadow-[0_0_30px_rgba(240,74,154,.28)] transition hover:-translate-y-1 hover:bg-[#f35eaa]">دنبال کردن GTA VI <ArrowLeft size={17} /></a><a href="#features" className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[.04] px-6 py-3.5 font-bold transition hover:-translate-y-1 hover:border-secondary/60 hover:text-secondary"><Play size={16} fill="currentColor" />ورود به دنیای GTA</a></div>
+          <div className="animate-rise mb-7 inline-flex items-center gap-3 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-sm font-bold text-primary"><span className="h-2 w-2 rounded-full bg-primary shadow-[0_0_12px_#f04a9a]" />GTA VI</div>
+          <h1 className="hero-title animate-rise-delay-1 font-black tracking-[-.06em] text-foreground text-glow">بالاخره نزدیک است...</h1>
+          <p className="animate-rise-delay-2 mt-7 max-w-xl text-lg leading-9 text-muted sm:text-xl">مرجع فارسی اخبار، اطلاعات و راهنماهای GTA VI</p>
+          <p className="animate-rise-delay-2 mt-4 max-w-lg leading-8 text-muted/75">جدیدترین اخبار، تریلرها، اطلاعات بازی، نقشه، شخصیت‌ها، ماشین‌ها و راهنماهای GTA VI را یکجا دنبال کنید.</p>
+          <div className="animate-rise-delay-3 mt-9 flex flex-wrap gap-3"><a href="#newsletter" className="inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3.5 font-bold text-white shadow-[0_0_30px_rgba(240,74,154,.28)] transition hover:-translate-y-1 hover:bg-[#f35eaa]">اولین نفر باخبر شو <ArrowLeft size={17} /></a><a href="#features" className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[.04] px-6 py-3.5 font-bold transition hover:-translate-y-1 hover:border-secondary/60 hover:text-secondary"><Play size={16} fill="currentColor" />مشاهده GTA VI</a></div>
         </div>
-        <div className="animate-rise-delay-3 lg:pt-32"><div className="rounded-[2rem] border border-primary/20 bg-background/70 p-6 shadow-[0_18px_80px_rgba(0,0,0,.3)] backdrop-blur-md sm:p-8"><div className="mb-8 flex items-center justify-between"><span className="inline-flex items-center gap-2 text-sm font-bold text-primary"><Sparkles size={16} /> دنیای GTA</span><span className="text-xs text-muted">GTA WORLD</span></div><div className="grid gap-3 sm:grid-cols-2"><div className="rounded-2xl border border-white/10 bg-white/[.04] p-5"><p className="text-3xl font-black text-foreground">VI</p><p className="mt-2 text-sm text-muted">آخرین اخبار GTA VI</p></div><div className="rounded-2xl border border-white/10 bg-white/[.04] p-5"><p className="text-3xl font-black text-foreground">V</p><p className="mt-2 text-sm text-muted">راهنماهای GTA V</p></div><div className="rounded-2xl border border-white/10 bg-white/[.04] p-5"><p className="text-3xl font-black text-foreground">∞</p><p className="mt-2 text-sm text-muted">دنیای بی‌پایان GTA</p></div><div className="rounded-2xl border border-white/10 bg-white/[.04] p-5"><p className="text-3xl font-black text-foreground">IR</p><p className="mt-2 text-sm text-muted">به زبان فارسی</p></div></div></div></div>
+        <div className="animate-rise-delay-3 lg:pt-32"><Countdown /></div>
       </div>
     </section>
   )
