@@ -13,7 +13,7 @@ export function Hero() {
       <div className="container-shell grid min-h-[780px] items-center gap-12 pb-20 pt-20 lg:grid-cols-[1.05fr_.95fr] lg:gap-20">
         <div className="max-w-3xl">
           <div className="animate-rise mb-7 inline-flex items-center gap-3 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-sm font-bold text-primary"><span className="h-2 w-2 rounded-full bg-primary shadow-[0_0_12px_#f04a9a]" />GTA VI</div>
-          <h1 className="hero-title animate-rise-delay-1 font-black tracking-[-.06em] text-foreground text-glow">بالاخره نزدیک است...</h1>
+          <h1 className="hero-title animate-rise-delay-1 font-black tracking-[-.06em] text-foreground text-glow">بالاخره <span className="text-primary">نزدیک</span> است...</h1>
           <p className="animate-rise-delay-2 mt-7 max-w-xl text-lg leading-9 text-muted sm:text-xl">مرجع فارسی اخبار، اطلاعات و راهنماهای GTA VI</p>
           <p className="animate-rise-delay-2 mt-4 max-w-lg leading-8 text-muted/75">جدیدترین اخبار، تریلرها، اطلاعات بازی، نقشه، شخصیت‌ها، ماشین‌ها و راهنماهای GTA VI را یکجا دنبال کنید.</p>
           <div className="animate-rise-delay-3 mt-9 flex flex-wrap gap-3"><a href="#newsletter" className="inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3.5 font-bold text-white shadow-[0_0_30px_rgba(240,74,154,.28)] transition hover:-translate-y-1 hover:bg-[#f35eaa]">اولین نفر باخبر شو <ArrowLeft size={17} /></a><a href="#features" className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[.04] px-6 py-3.5 font-bold transition hover:-translate-y-1 hover:border-secondary/60 hover:text-secondary"><Play size={16} fill="currentColor" />مشاهده GTA VI</a></div>
